@@ -2,9 +2,38 @@
     margin: 0%;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 nav{
     background-color: black;
     display: flex;
     justify-content: space-around;
     padding: 1% 0%;
+}
+.logo-imagen{
+    width: 50%;
+}
+.nav-enlaces a{
+    text-decoration: none;
+    color: #C9C9C9;
+    padding: 0 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.seccion-1{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/headerBg.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7% 13%;
+}
+.seccion-1-titulo{
+    padding: 2% 0;
+    color: white;
+    font-weight: 100;
+    font-size: 45px;
+    margin-right: 10px;
 }
