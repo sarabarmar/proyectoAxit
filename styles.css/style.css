@@ -306,6 +306,7 @@ input {
     margin-bottom: 10px;
     position: relative;
 }
+
 .seccion-5-hr {
     width: 110px;
     height: 3px;
@@ -313,6 +314,7 @@ input {
     border: none;
     margin: 30px 0;
 }
+
 .seccion-5-parrafo {
     color: #666;
     line-height: 1.6;
@@ -389,20 +391,24 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px 20px;
     background-color: #f3f3f3;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .seccion-7-titulo {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: lighter;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .seccion-7-parrafo {
     color: #555;
     margin-bottom: 40px;
+    font-size: 1.1rem;
 }
 
 .seccion-7-cartas {
@@ -432,7 +438,6 @@ input {
     background-color: #333;
     color: white;
     font-family: 'Raleway', sans-serif;
-    ;
 }
 
 .carta-1-precio span {
@@ -466,7 +471,6 @@ input {
     color: #444;
 }
 
-/* --- CARTA DEL MEDIO DESTACADA --- */
 .carta-2 h3 {
     background: #333;
 }
@@ -485,52 +489,64 @@ input {
 .seccion-8 {
     text-align: center;
     padding: 50px 10%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .seccion-8-titulo {
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: lighter;
 }
 
 .seccion-8-hr {
-    width: 60px;
+    width: 90px;
     height: 2px;
     background: #FF8B38;
     border: none;
-    margin: 15px auto;
+    margin: 40px auto;
 }
 
 .seccion-8-parrafo {
     color: #777;
     margin-bottom: 40px;
+    font-size: 1.1rem;
 }
 
 .seccion-8-opiniones {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 12%;
 }
 
+
 .opinion-1 {
+    position: relative;
     max-width: 300px;
 }
 
+.opinion-1 img {
+    width: 100%;
+    display: block;
+}
+
 .opinion-1-parrafo {
-    background: #f5f5f5;
-    padding: 20px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     font-size: 14px;
     color: #555;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .opinion-1-persona-1,
 .opinion-2-persona,
 .opinion-3-persona {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 5px;
+    margin-top: 20px;
 }
 
 .opinion-1-persona-1 img,
@@ -557,34 +573,43 @@ input {
 
 /* SECCION-9 */
 .seccion-9 {
-    background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.4)), url(../assets/images/bg2.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.582)), url(../assets/images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     color: white;
     padding: 80px 20px;
     font-family: Arial, sans-serif;
+
 }
 
 .seccion-9-titulo {
-    font-size: 32px;
+    font-size: 3rem;
+    font-weight: lighter;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.seccion-9 hr {
-    width: 60px;
+.seccion-9-hr {
+    width: 80px;
+    height: 2px;
     border: 1px solid white;
-    margin: 10px auto;
+    margin: 50px auto;
 }
 
 .seccion-9-parrafo {
-    font-size: 16px;
+    font-size: 1.1rem;
     margin-bottom: 20px;
+    color: #C2C0BE;
 }
 
 .seccion-9-boton {
     border: 1px solid white;
     background: none;
     color: white;
-    padding: 8px 16px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -607,22 +632,27 @@ input {
 }
 
 .seccion-10-titulo {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: lighter;
 }
 
 .seccion-10-hr {
-    width: 60px;
-    height: 2px;
+    width: 90px;
+    height: 3px;
     background-color: #FF8B38;
     border: none;
+}
+
+.seccion-10-parrafo {
+    color: #666;
+    font-size: 1.1rem;
 }
 
 .seccion-10-formulario {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 0 10%;
+    padding: 0 11%;
     width: 100%;
 }
 
@@ -630,30 +660,22 @@ input {
 .seccion-10-formulario-2 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%;
 }
 
 .seccion-10-formulario input,
 .seccion-10-formulario textarea {
     width: 100%;
-    padding: 15px 0;
     font-size: 14px;
     border: none;
-    border-bottom: 1px solid #D6D6D6;
-    outline: none;
-    resize: none;
-}
-
-.seccion-10-formulario textarea {
-    min-height: 160px;
+    border-bottom: 1px solid #D6D6D6
 }
 
 .seccion-10-boton {
     background-color: #FF9B51;
     border: none;
     color: white;
-    padding: 15px 25px;
+    padding: 20px 30px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -682,4 +704,130 @@ footer {
 
 .copyright {
     font-size: 15px;
+}
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        line-height: normal;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-enlaces a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .seccion-1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .seccion-1-formulario {
+        width: 100%;
+    }
+
+    .seccion-3,
+    .seccion-4,
+    .seccion-5 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .seccion-6-horizontal,
+    .seccion-7-cartas,
+    .seccion-8-opiniones,
+    .seccion-10-formulario {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        padding: 0 5%;
+    }
+
+    .seccion-1 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .seccion-3,
+    .seccion-4,
+    .seccion-5 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .seccion-6-horizontal,
+    .seccion-7-cartas,
+    .seccion-8-opiniones,
+    .seccion-10-formulario {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    nav {
+        padding: 0 8%;
+    }
+
+    .seccion-1 {
+        padding: 0 8%;
+        gap: 40px;
+    }
+
+    .seccion-3,
+    .seccion-4,
+    .seccion-5 {
+        gap: 10%;
+        height: auto;
+    }
+
+    .seccion-6-horizontal,
+    .seccion-7-cartas,
+    .seccion-8-opiniones,
+    .seccion-10-formulario {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1279px) {
+    nav {
+        padding: 0 8%;
+    }
+
+    .seccion-1 {
+        padding: 0 8%;
+    }
+
+    .seccion-3,
+    .seccion-4,
+    .seccion-5 {
+        gap: 15%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .seccion-1 {
+        padding: 0 11%;
+    }
+
+    .seccion-3,
+    .seccion-4,
+    .seccion-5 {
+        padding: 0 11%;
+    }
 }
