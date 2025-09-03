@@ -705,7 +705,9 @@ footer {
 .copyright {
     font-size: 15px;
 }
+
 @media (max-width: 1280px) {
+
     nav,
     .seccion-1,
     .seccion-2,
@@ -726,27 +728,42 @@ footer {
         margin: 0 auto;
     }
 
-    nav { padding: 0 8%; }
+    nav {
+        padding: 0 8%;
+    }
 
     .seccion-1,
     .seccion-3,
     .seccion-4,
-    .seccion-5 { padding: 0 8%; }
+    .seccion-5 {
+        padding: 0 8%;
+    }
 
     .seccion-3,
     .seccion-4,
-    .seccion-5 { height: auto; }
+    .seccion-5 {
+        height: auto;
+    }
 
-    .seccion-6-horizontal { gap: 24px; }
+    .seccion-6-horizontal {
+        gap: 24px;
+    }
 
-    .seccion-7-cartas { gap: 24px; }
+    .seccion-7-cartas {
+        gap: 24px;
+    }
 
-    .seccion-8-opiniones { gap: 24px; }
+    .seccion-8-opiniones {
+        gap: 24px;
+    }
 
-    .seccion-10-formulario { gap: 24px; }
+    .seccion-10-formulario {
+        gap: 24px;
+    }
 }
 
 @media (max-width: 921px) {
+
     nav,
     .seccion-1,
     .seccion-2,
@@ -771,7 +788,10 @@ footer {
 
     .seccion-3,
     .seccion-4,
-    .seccion-5 { height: auto; gap: 32px; }
+    .seccion-5 {
+        height: auto;
+        gap: 32px;
+    }
 
     .seccion-6-horizontal {
         display: grid;
@@ -779,14 +799,20 @@ footer {
         align-items: start;
         gap: 24px;
     }
-    .seccion-6-horizontal > * { width: 100%; }
+
+    .seccion-6-horizontal>* {
+        width: 100%;
+    }
 
     .seccion-7-cartas {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
     }
-    .seccion-7-cartas > * { width: 100%; }
+
+    .seccion-7-cartas>* {
+        width: 100%;
+    }
 
     .seccion-8-opiniones {
         display: grid;
@@ -794,7 +820,10 @@ footer {
         gap: 24px;
         justify-items: center;
     }
-    .seccion-8-opiniones > * { width: 100%; }
+
+    .seccion-8-opiniones>* {
+        width: 100%;
+    }
 
     .seccion-10-formulario {
         display: grid;
@@ -802,11 +831,16 @@ footer {
         gap: 24px;
         align-items: start;
     }
-    .seccion-10-formulario > * { width: 100%; }
+
+    .seccion-10-formulario>* {
+        width: 100%;
+    }
 }
 
 @media (max-width: 769px) {
-    nav { padding: 0 5%; }
+    nav {
+        padding: 0 5%;
+    }
 
     .seccion-1 {
         display: flex;
@@ -816,7 +850,10 @@ footer {
         height: auto;
         gap: 24px;
     }
-    .seccion-1-formulario { width: 100%; }
+
+    .seccion-1-formulario {
+        width: 100%;
+    }
 
     .seccion-3,
     .seccion-4,
@@ -829,48 +866,87 @@ footer {
         gap: 28px;
         padding: 0 5%;
     }
-    .seccion-4-imagen img,
-    .seccion-5-imagen img { max-width: 100%; height: auto; }
 
-    .seccion-6 { height: auto; padding: 0 5%; }
+    .seccion-4-imagen img,
+    .seccion-5-imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .seccion-6 {
+        height: auto;
+        padding: 0 5%;
+    }
+
     .seccion-6-horizontal {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         justify-items: center;
     }
-    .seccion-6-horizontal > * { width: 100%; }
 
-    .seccion-7 { height: auto; padding: 40px 5%; }
+    .seccion-6-horizontal>* {
+        width: 100%;
+    }
+
+    .seccion-7 {
+        height: auto;
+        padding: 40px 5%;
+    }
+
     .seccion-7-cartas {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         justify-items: center;
     }
-    .seccion-7-cartas > * { width: 100%; max-width: 600px; }
 
-    .seccion-8 { padding: 40px 5%; }
+    .seccion-7-cartas>* {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .seccion-8 {
+        padding: 40px 5%;
+    }
+
     .seccion-8-opiniones {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         justify-items: center;
     }
-    .seccion-8-opiniones > * { width: 100%; max-width: 520px; }
 
-    .seccion-9 { padding: 60px 5%; }
+    .seccion-8-opiniones>* {
+        width: 100%;
+        max-width: 520px;
+    }
 
-    .seccion-10 { height: auto; padding: 40px 5%; gap: 20px; }
+    .seccion-9 {
+        padding: 60px 5%;
+    }
+
+    .seccion-10 {
+        height: auto;
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
     .seccion-10-formulario {
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
         width: 100%;
     }
-    .seccion-10-formulario > * { width: 100%; }
+
+    .seccion-10-formulario>* {
+        width: 100%;
+    }
+
     .seccion-10-formulario input,
-    .seccion-10-formulario textarea { width: 100%; }
+    .seccion-10-formulario textarea {
+        width: 100%;
+    }
 }
 
 @media (max-width: 481px) {
@@ -883,7 +959,11 @@ footer {
         width: 100vw;
         margin: 0 auto;
     }
-    .nav-enlaces a { display: block; padding: 10px 0; }
+
+    .nav-enlaces a {
+        display: block;
+        padding: 10px 0;
+    }
 
     .seccion-1,
     .seccion-3,
@@ -912,21 +992,36 @@ footer {
         justify-items: center;
         width: 100%;
     }
-    .seccion-6-horizontal > *,
-    .seccion-7-cartas > *,
-    .seccion-8-opiniones > *,
-    .seccion-10-formulario > * { width: 100%; }
 
-    .seccion-1-formulario { width: 100%; }
+    .seccion-6-horizontal>*,
+    .seccion-7-cartas>*,
+    .seccion-8-opiniones>*,
+    .seccion-10-formulario>* {
+        width: 100%;
+    }
 
-    .seccion-2 img { width: 40px; height: 40px; }
+    .seccion-1-formulario {
+        width: 100%;
+    }
 
-    .seccion-9 { padding: 40px 20px; }
+    .seccion-2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .seccion-9 {
+        padding: 40px 20px;
+    }
 }
 
 @media (max-width: 352px) {
-    nav { padding: 12px; }
-    .nav-enlaces a { padding: 8px 0; }
+    nav {
+        padding: 12px;
+    }
+
+    .nav-enlaces a {
+        padding: 8px 0;
+    }
 
     .seccion-1,
     .seccion-3,
@@ -937,7 +1032,9 @@ footer {
     .seccion-8,
     .seccion-9,
     .seccion-10,
-    footer { padding: 12px; }
+    footer {
+        padding: 12px;
+    }
 
     .seccion-6-horizontal,
     .seccion-7-cartas,
@@ -947,6 +1044,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-
-
