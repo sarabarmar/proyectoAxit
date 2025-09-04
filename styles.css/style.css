@@ -706,341 +706,114 @@ footer {
     font-size: 15px;
 }
 
-@media (max-width: 1280px) {
-
-    nav,
-    .seccion-1,
-    .seccion-2,
-    .seccion-3,
-    .seccion-4,
-    .seccion-5,
-    .seccion-6,
-    .seccion-6-horizontal,
-    .seccion-7,
-    .seccion-7-cartas,
-    .seccion-8,
-    .seccion-8-opiniones,
-    .seccion-9,
-    .seccion-10,
-    .seccion-10-formulario,
-    footer {
-        width: 100vw;
-        margin: 0 auto;
-    }
-
-    nav {
-        padding: 0 8%;
-    }
-
-    .seccion-1,
-    .seccion-3,
-    .seccion-4,
-    .seccion-5 {
-        padding: 0 8%;
-    }
-
-    .seccion-3,
-    .seccion-4,
-    .seccion-5 {
-        height: auto;
-    }
-
-    .seccion-6-horizontal {
-        gap: 24px;
-    }
-
-    .seccion-7-cartas {
-        gap: 24px;
-    }
-
-    .seccion-8-opiniones {
-        gap: 24px;
-    }
-
-    .seccion-10-formulario {
-        gap: 24px;
-    }
-}
-
-@media (max-width: 921px) {
-
-    nav,
-    .seccion-1,
-    .seccion-2,
-    .seccion-3,
-    .seccion-4,
-    .seccion-5,
-    .seccion-6,
-    .seccion-6-horizontal,
-    .seccion-7,
-    .seccion-7-cartas,
-    .seccion-8,
-    .seccion-8-opiniones,
-    .seccion-9,
-    .seccion-10,
-    .seccion-10-formulario,
-    footer {
-        width: 100vw;
+@media (max-width: 1279px) {
+    nav, .seccion-1, .seccion-2, .seccion-3, .seccion-4,
+    .seccion-5, .seccion-6, .seccion-7, .seccion-8,
+    .seccion-9, .seccion-10, footer {
+        width: 100%;
         margin: 0 auto;
         padding: 0 8%;
-        box-sizing: border-box;
-    }
-
-    .seccion-3,
-    .seccion-4,
-    .seccion-5 {
-        height: auto;
-        gap: 32px;
-    }
-
-    .seccion-6-horizontal {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        align-items: start;
-        gap: 24px;
-    }
-
-    .seccion-6-horizontal>* {
-        width: 100%;
-    }
-
-    .seccion-7-cartas {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
-    }
-
-    .seccion-7-cartas>* {
-        width: 100%;
-    }
-
-    .seccion-8-opiniones {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
-        justify-items: center;
-    }
-
-    .seccion-8-opiniones>* {
-        width: 100%;
-    }
-
-    .seccion-10-formulario {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
-        align-items: start;
-    }
-
-    .seccion-10-formulario>* {
-        width: 100%;
-    }
-}
-
-@media (max-width: 769px) {
-    nav {
-        padding: 0 5%;
-    }
-
-    .seccion-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
         height: auto;
-        gap: 24px;
     }
+    .seccion-7-cartas div,
+    .seccion-6-horizontal div,
+    .seccion-8-opiniones div,
+    .seccion-10-formulario div {
+        display: inline-block;
+        width: 45%;
+        margin: 2% auto;
+        vertical-align: top;
+    }
+    .seccion-1-formulario {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 
+@media (max-width: 920px) {
+    nav, .seccion-1, .seccion-2, .seccion-3, .seccion-4,
+    .seccion-5, .seccion-6, .seccion-7, .seccion-8,
+    .seccion-9, .seccion-10, footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 6%;
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    .seccion-7-cartas div,
+    .seccion-6-horizontal div,
+    .seccion-8-opiniones div,
+    .seccion-10-formulario div {
+        display: block;
+        width: 100%;
+        margin: 12px auto;
+    }
     .seccion-1-formulario {
         width: 100%;
+        margin: 0 auto;
     }
-
-    .seccion-3,
-    .seccion-4,
-    .seccion-5 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        gap: 28px;
-        padding: 0 5%;
-    }
-
-    .seccion-4-imagen img,
-    .seccion-5-imagen img {
+    img {
         max-width: 100%;
         height: auto;
     }
-
-    .seccion-6 {
-        height: auto;
-        padding: 0 5%;
-    }
-
-    .seccion-6-horizontal {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .seccion-6-horizontal>* {
-        width: 100%;
-    }
-
-    .seccion-7 {
-        height: auto;
-        padding: 40px 5%;
-    }
-
-    .seccion-7-cartas {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .seccion-7-cartas>* {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .seccion-8 {
-        padding: 40px 5%;
-    }
-
-    .seccion-8-opiniones {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .seccion-8-opiniones>* {
-        width: 100%;
-        max-width: 520px;
-    }
-
-    .seccion-9 {
-        padding: 60px 5%;
-    }
-
-    .seccion-10 {
-        height: auto;
-        padding: 40px 5%;
-        gap: 20px;
-    }
-
-    .seccion-10-formulario {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-        width: 100%;
-    }
-
-    .seccion-10-formulario>* {
-        width: 100%;
-    }
-
-    .seccion-10-formulario input,
-    .seccion-10-formulario textarea {
-        width: 100%;
-    }
 }
 
-@media (max-width: 481px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        line-height: normal;
-        padding: 20px;
-        text-align: center;
-        width: 100vw;
+@media (max-width: 768px) {
+    nav, .seccion-1, .seccion-2, .seccion-3, .seccion-4,
+    .seccion-5, .seccion-6, .seccion-7, .seccion-8,
+    .seccion-9, .seccion-10, footer {
+        width: 100%;
         margin: 0 auto;
-    }
-
-    .nav-enlaces a {
+        padding: 0 5%;
+        text-align: center;
         display: block;
-        padding: 10px 0;
+        height: auto;
     }
-
-    .seccion-1,
-    .seccion-3,
-    .seccion-4,
-    .seccion-5,
-    .seccion-6,
-    .seccion-7,
-    .seccion-8,
-    .seccion-9,
-    .seccion-10,
-    footer {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .seccion-6-horizontal,
-    .seccion-7-cartas,
-    .seccion-8-opiniones,
-    .seccion-10-formulario {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-        justify-items: center;
+    .seccion-7-cartas div,
+    .seccion-6-horizontal div,
+    .seccion-8-opiniones div,
+    .seccion-10-formulario div {
+        display: block;
         width: 100%;
+        margin: 14px auto;
     }
-
-    .seccion-6-horizontal>*,
-    .seccion-7-cartas>*,
-    .seccion-8-opiniones>*,
-    .seccion-10-formulario>* {
-        width: 100%;
-    }
-
     .seccion-1-formulario {
         width: 100%;
+        margin: 0 auto;
     }
-
-    .seccion-2 img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .seccion-9 {
-        padding: 40px 20px;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-@media (max-width: 352px) {
-    nav {
+@media (max-width: 480px) {
+    nav, .seccion-1, .seccion-2, .seccion-3, .seccion-4,
+    .seccion-5, .seccion-6, .seccion-7, .seccion-8,
+    .seccion-9, .seccion-10, footer {
+        width: 100%;
+        margin: 0 auto;
         padding: 12px;
+        text-align: center;
+        display: block;
+        height: auto;
     }
-
-    .nav-enlaces a {
-        padding: 8px 0;
+    .seccion-7-cartas div,
+    .seccion-6-horizontal div,
+    .seccion-8-opiniones div,
+    .seccion-10-formulario div {
+        display: block;
+        width: 100%;
+        margin: 12px auto;
     }
-
-    .seccion-1,
-    .seccion-3,
-    .seccion-4,
-    .seccion-5,
-    .seccion-6,
-    .seccion-7,
-    .seccion-8,
-    .seccion-9,
-    .seccion-10,
-    footer {
-        padding: 12px;
+    .seccion-1-formulario {
+        width: 100%;
+        margin: 0 auto;
     }
-
-    .seccion-6-horizontal,
-    .seccion-7-cartas,
-    .seccion-8-opiniones,
-    .seccion-10-formulario {
-        gap: 12px;
-        grid-template-columns: 1fr;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
